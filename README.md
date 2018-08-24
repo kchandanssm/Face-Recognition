@@ -1,11 +1,11 @@
 # Face-Recognition
 
-This project was done with this fantastic "Open Source Computer Vision Library", the (OpenCV)[https://opencv.org/].OpenCV was designed for computational efficiency and with a strong focus on real-time applications. So, it's perfect for real-time face recognition using a camera.
+This project was done with this fantastic "Open Source Computer Vision Library", the [OpenCV](https://opencv.org/).OpenCV was designed for computational efficiency and with a strong focus on real-time applications. So, it's perfect for real-time face recognition using a camera.
 
 To create a complete project on Face Recognition, we must work on 3 very distinct phases:
 
 
-##Three Phases
+## Three Phases
 
 - Face Detection and Data Gathering 
 
@@ -14,7 +14,7 @@ To create a complete project on Face Recognition, we must work on 3 very distinc
 - Face Recognition
 
 
-###Face Detection:-
+### Face Detection:-
 
 The most basic task on Face Recognition is of course, "Face Detecting". Before anything, you must "capture" a face (Phase 1) in order to recognize it, when compared with a new face captured on future (Phase 3). 
 
@@ -24,7 +24,7 @@ Here we will work with face detection. Initially, the algorithm needs a lot of p
 Run face_detection.py.
 
 
-###Data Gathering:-
+### Data Gathering:-
 
 First, create a directory where you develop your project, for example, FacialRecognitionProject:
 
@@ -45,7 +45,7 @@ eg:- face_id = input('\n enter user id end press  ==>  ')
 On my code, I am capturing 500 samples from each id. You can change it on the last "elif". The number of samples is used to break the loop where the face samples are captured.
 
 
-###Trainer:-
+### Trainer:-
 
 On this second phase, we must take all user data from our dataset and "trainer" the OpenCV Recognizer. This is done directly by a specific OpenCV function. The result will be a .yml file that will be saved on a "trainer/" directory.
 
