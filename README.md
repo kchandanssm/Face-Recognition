@@ -1,4 +1,11 @@
+# Face-Recognition
+
+This project was done with this fantastic "Open Source Computer Vision Library", the (OpenCV)[https://opencv.org/].OpenCV was designed for computational efficiency and with a strong focus on real-time applications. So, it's perfect for real-time face recognition using a camera.
+
 To create a complete project on Face Recognition, we must work on 3 very distinct phases:
+
+
+##Three Phases
 
 - Face Detection and Data Gathering 
 
@@ -7,7 +14,7 @@ To create a complete project on Face Recognition, we must work on 3 very distinc
 - Face Recognition
 
 
-Face Detection:-
+###Face Detection:-
 
 The most basic task on Face Recognition is of course, "Face Detecting". Before anything, you must "capture" a face (Phase 1) in order to recognize it, when compared with a new face captured on future (Phase 3). 
 
@@ -17,16 +24,16 @@ Here we will work with face detection. Initially, the algorithm needs a lot of p
 Run face_detection.py.
 
 
-Data Gathering:-
+###Data Gathering:-
 
 First, create a directory where you develop your project, for example, FacialRecognitionProject:
 
-"mkdir FacialRecognitionProject"
+`mkdir FacialRecognitionProject`
 
 In this directory, besides the 3 python scripts that we will create for our project, we must have saved on it the Facial Classifier.
 
 Next, create a subdirectory where we will store our facial samples and name it "dataset":
-"mkdir dataset"
+`mkdir dataset`
 
 Run face_dataset.py
 
@@ -38,14 +45,14 @@ eg:- face_id = input('\n enter user id end press  ==>  ')
 On my code, I am capturing 500 samples from each id. You can change it on the last "elif". The number of samples is used to break the loop where the face samples are captured.
 
 
-Trainer:-
+###Trainer:-
 
 On this second phase, we must take all user data from our dataset and "trainer" the OpenCV Recognizer. This is done directly by a specific OpenCV function. The result will be a .yml file that will be saved on a "trainer/" directory.
 
 "mkdir trainer"
 
 Confirm if you have the PIL library installed on your Rpi. If not, run the below command in Terminal:
-"pip install pillow"
+`pip install pillow`
 
 
 We will use as a recognizer, the LBPH (LOCAL BINARY PATTERNS HISTOGRAMS) Face Recognizer, included on OpenCV package. We do this in the following line:
@@ -59,7 +66,7 @@ Recognizer:-
 Now, we reached the final phase of our project. Here, we will capture a fresh face on our camera and if this person had his face captured and trained before, our recognizer will make a "prediction" returning its id and an index, shown how confident the recognizer is with this match.
 
 We are including here a new array, so we will display "names", instead of numbered ids:
-names = ['None', 'Marcelo', 'Paula', 'Ilza', 'Z', 'W']
+names = ['None', 'Chandan', 'Mahi', 'VK', 'Amit', 'Ankit']
 
 Run face_recognition.py
 
@@ -67,4 +74,4 @@ Run face_recognition.py
 
 
 
-# Face-Recognition
+
